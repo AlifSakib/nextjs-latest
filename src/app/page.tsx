@@ -1,7 +1,10 @@
+import readJsonFile from "@/utils/readJsonFile";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  console.log(readJsonFile().data);
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
